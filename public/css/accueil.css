@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 20px;
+
+}
+
+@keyframes accueil {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.container {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+/* ***************************** */
+
+.container .logo h3 {
+    opacity: 0;
+    transform: translateX(-100px);
+    color: rgba(117, 13, 13, 0.856);
+    font-size: 30px;
+    animation: accueil 2s forwards;
+}
+
+/* ***************************** */
+
+.container .connexion {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+}
+
+.container .connexion a {
+    position: relative;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.329);
+}
+
+
+.container .connexion a:nth-child(1) {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: accueil 2s 0.3s forwards;
+}
+
+.container .connexion a:nth-child(2) {
+    opacity: 0;
+    transform: translateX(200px);
+    animation: accueil 2s 0.6s forwards;
+}
+
+.container .connexion a:nth-child(3) {
+    opacity: 0;
+    transform: translateX(-200px);
+    animation: accueil 2s 0.6s forwards;
+}
+
+/* ***************************** */
+
+.container .navbar {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+.container .navbar li a {
+    color: black;
+    padding: 10px;
+    position: relative;
+}
+
+.container .navbar li:nth-child(1) {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: accueil 2s 0.9s forwards;
+}
+
+.container .navbar li:nth-child(2) {
+    opacity: 0;
+    transform: translate(-50px, 100px);
+    animation: accueil 2s 1.2s forwards;
+}
+
+.container .navbar li:nth-child(3) {
+    opacity: 0;
+    transform: translate(50px, -100px);
+    animation: accueil 2s 1.5s forwards;
+}
+
+.container .navbar li:nth-child(4) {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: accueil 2s 1.8s forwards;
+}
+
+/* ************************************** */
+
+.container .navbar li a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    z-index: -1;
+    transition: 2s;
+}
+
+.container .navbar li a:hover::before {
+    width: 100%;
+    background-color: #fff999;
+    transform: rotate(360deg);
+}
+
+
+.container .navbar li a::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: red;
+    z-index: -1;
+    transition: 2s;
+}
+
+.container .navbar li a:hover::after {
+    width: 100%;
+    background-color: #fff999;
+    transform: rotate(-360deg);
+}
+
+/* ************************** */
+
+.container .connexion a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    transition: 2s;
+    background-color: rgba(0, 0, 0, 0.575);
+}
+
+.container .connexion a:hover::before {
+    width: 100%;
+    background-color: black;
+}
+
+/* ********************************************************************************************** */
+
+.image {
+    opacity: 0;
+    margin-bottom: 100px;
+    margin-top: 20px;
+    height: 160px;
+    text-align: center;
+    animation: accueil 2s 2.1s forwards;
+}
+
+.image:hover {
+    transform: translate3d(20px, 30px, 30px);
+}
+
+.content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.content .intro {
+    opacity: 0;
+    padding: 16px;
+    text-align: justify;
+    width: 60%;
+    animation: accueil 2s 2.3s forwards;
+}
+
+.content .listing {
+    opacity: 0;
+    text-align: center;
+    width: 20%;
+    animation: accueil 2s 2.6s forwards;
+}

@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: grey;
+
+}
+
+@keyframes title {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* ******************************************************************************* */
+
+.container h3 {
+    opacity: 0;
+    background-color: red;
+    padding: 20px 0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    transform: translate(-50px, 100px);
+    animation: title 2s forwards;
+}
+
+.container h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: yellow;
+    border: 16px double black;
+    text-align: justify;
+    margin: 0 20px;
+    padding: 10px;
+}
+
+/* ******************************************************************************* */
+
+h1 {
+    text-align: center;
+}
+
+.space-comments {
+    border: 4px solid black;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.space-comments h1 {
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.space-comments .comments {
+    width: 86%;
+    padding: 20px 20px;
+    margin: 40px auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+    background-color: yellow;
+}
+
+.space-comments .comment {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.space-comments .comment h5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ******************************************************************************* */
+
+.write-comment {
+    height: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    flex-direction: column;
+    margin: 40px 20px;
+    font-size: 30px;
+}
+
+.write-comment input[type=submit] {
+    background-color: yellow;
+    width: 130px;
+    padding: 10px 0;
+    border: 4px solid #fff999;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 9px 0px rgba(0, 0, 0, 0.4);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+.write-comment input[type=submit]:hover {
+    transform: scale(1.4);
+}
+
+.write-comment textarea {
+    outline: none;
+    padding: 20px;
+    width: 50%;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px 0 black;
+}
